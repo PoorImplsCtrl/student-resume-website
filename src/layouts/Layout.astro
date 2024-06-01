@@ -14,12 +14,12 @@ const { title, description = "", image = "" } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
 		<meta name="generator" content={Astro.generator} />
 		<meta property="og:image" content={image} />
 		<title>{title}</title>
 	</head>
-	<body class = "min-h-screen bg-red-600">
+	<body class = "min-h-screen bg-gradient-to-b from-slate-800 to-purple-700">
 		<slot />
 	</body>
 </html>
