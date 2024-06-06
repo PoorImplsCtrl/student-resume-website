@@ -2,13 +2,13 @@
 interface Props {
 	title: string;
 	body: string;
-	href: string;
+	href?: string;
 }
 
 const { href, title, body } = Astro.props;
 ---
 
-<li class="flex p-1 bg-gray-700 rounded-lg transition-[background-position] duration-[0.6s] ease-[cubic-bezier(0.22,1,0.36,1)] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.1)]">
+<li class="flex p-1 bg-gray-700 rounded-lg transition-[background-position] duration-[0.6s] ease-[cubic-bezier(0.22,1,0.36,1)] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.1)] text-white">
 	<a href={href}>
 		<h2 class="m-0 text-[1.25rem] transition-[color] duration-[0.6s] ease-[cubic-bezier(0.22,1,0.36,1)]">
 			{title}
